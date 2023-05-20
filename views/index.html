@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="res/monogram.png"/>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Doka-frami</title>
 </head>
-
 <body>
-    <h1>Vasyl Pokyn'boroda</h1>
+    <nav>
+        <div class="info"><a href="./out">Docs</a></div>
+        <div class="info"><a href="./blog   ">Blog</a></div>
+        <div class="info"><a href="#">About</a></div>
+    </nav>
+    <context-menu name="Custom_menu_element">
+        <li slot="author">
+            vlnt
+        </li>
+        <li slot="docs">
+            Docs
+        </li>
+    </context-menu>
+    <div id="container">
+        <canvas id="canvas1"></canvas>
+    </div>
+    <script src="dist/main.js" defer></script>
 </body>
-
 </html>
